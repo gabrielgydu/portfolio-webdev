@@ -1,0 +1,19 @@
+.container {
+	width: 1200px;
+	margin: 20px auto 0 auto;
+}
+
+.sidenav {
+	width: 100px;
+	height: 100%;
+	margin: auto 0 200px auto;
+	background-color: #00ff00;
+	float: left;
+	font-family: OpenSans;
+	font-color: white;
+	font-size: 100%;
+}
+
+footer-social-media {
+	text-align: center;
+}

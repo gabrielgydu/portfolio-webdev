@@ -13,6 +13,8 @@ a:hover {
 /*Navigation Menu*/
 
 nav {
+	display:flex;
+	justify-content:space-between;
 	overflow: hidden;
 	background-color: #000;
 	position: fixed;
@@ -23,19 +25,16 @@ nav {
 }
 
 #logo{
-	float: left;
 	padding-left: 30px;
 	padding-top: 18px;
 }
 
 #nav{
-	float: right;
+	display:flex;
+	width: 300px;
+	justify-content:space-evenly;
 	padding-right: 30px;
 	padding-top: 18px;
-}
-
-#nav a{
-	padding-right: 30px;
 }
 
 /*Container for sidebar and content*/
@@ -51,40 +50,41 @@ aside {
 	height: 100%;
 	margin: auto 0 auto auto;
 	background-color: #090909;
-	float: left;
 	position: fixed;
 	left: 0;
 	top: 60px;
 
 }
 
-aside li{
-	width: 100%;
-	height: 60px;
-	padding-top: 10px;
+aside ul{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
 }
 
-aside ul{
-	padding-left: 30px;
+aside li{
+	padding-top: 25px;
 }
 
 main {
-	float: left;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content:center;
+
 	position: fixed;
 	left: 180px;
 	right: 0px;
 	top: 60px;
 	bottom: 0px;
+	align-content:start;
 }
 
 .profile-pic {
+	order: 2;
 }
+
 #profilepic {
 	width: 20%;
-	float: right;
-	padding-right: 180px;
-	padding-top: 170px;
-
 }
 
 .content-text {
@@ -104,10 +104,9 @@ main {
 }
 
 .bg-img {
-	z-index: -1;
+	z-index: -10;
 	width: 100%;
 	height: 100%;
-	float: left;
 	position: fixed;
 	top: 60px;
 	background-image: url("../images/content-bg.jpg");
@@ -136,8 +135,11 @@ footer {
 }
 
 
-footer ul, li {
-	float: left;
+footer ul{
+	display:flex;
+	flex-flow:;
+	justify-content:space-evenly;
+	width: 10%;
 	padding-left: 30px;
 }
 

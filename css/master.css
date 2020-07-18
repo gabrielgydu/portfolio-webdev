@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-a, p {
+a, p, h1 {
 	color: #FFF;
 	font-family: 'Quicksand', Futura, Helvetica, Helvetica Neue, Arial;
 	font-size: 16pt;
@@ -12,7 +12,7 @@ a:hover {
 }
 /*Navigation Menu*/
 
-.navbar {
+nav {
 	overflow: hidden;
 	background-color: #000;
 	position: fixed;
@@ -46,7 +46,7 @@ a:hover {
 }
 
 /*Sidebar navigation*/
-.sidenav {
+aside {
 	width: 180px;
 	height: 100%;
 	margin: auto 0 auto auto;
@@ -58,14 +58,17 @@ a:hover {
 
 }
 
-.sidenav-item{
+aside li{
 	width: 100%;
 	height: 60px;
-	padding-left: 30px;
 	padding-top: 10px;
 }
 
-.content {
+aside ul{
+	padding-left: 30px;
+}
+
+main {
 	float: left;
 	position: fixed;
 	left: 180px;
@@ -97,6 +100,7 @@ a:hover {
 
 #greeting {
 	font-size: 48pt;
+	margin: 32px 0 32px 0;
 }
 
 .bg-img {
@@ -132,12 +136,11 @@ footer {
 }
 
 
-.footer-social-media {
+footer ul, li {
 	float: left;
-	padding-top: 18px;
 	padding-left: 30px;
 }
 
-.footer-social-media a{
+footer a{
 	padding-right: 30px;
 }

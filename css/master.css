@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-a, p, h1 {
+a, p, h1, label {
 	color: #FFF;
 	font-family: 'Quicksand', Futura, Helvetica, Helvetica Neue, Arial;
 	font-size: 16pt;
